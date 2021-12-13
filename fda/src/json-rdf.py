@@ -38,13 +38,13 @@ def add_literal(graph, subject_id, drugs_term, object_string):
 def hash_string(content):
     hasher = hashlib.sha1(content.encode('utf-8'))
     bytes = base64.urlsafe_b64encode(hasher.digest())
-    return str(bytes)
+    return bytes.hex()
 
 
 def id_from_object(object):
     string = json.dumps(object)  # gives a string that is also valid JSON
     hashed = hash_string(string)
-    return hashed[:8]  # truncate
+    return hashed  # [:8]  # truncate
 
 # test = [{"one": "two", "three": "four"}]
 # print(id_from_object(test))
@@ -73,6 +73,6 @@ for result in results:
             for value in values:
                 add_literal(g, openfda_id, name, value)
 
-print(g.serialize(format="turtle"))
+print(g.serialize(format="ntriples"))
 
 f.close()
