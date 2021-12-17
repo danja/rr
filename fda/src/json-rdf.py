@@ -60,17 +60,20 @@ for result in results:
     if 'products' in result:
         products = result['products']  # list of objects
         for product in products:  # list of dictionaries
-            product_id = "product_"+id_from_object(product)
+            # product_id = "product_"+id_from_object(product)
+            # print("product : "+product)
             for name, value in product.items():
                 if type(value) is str:  # some are lists
+                    product_id = "product_"+id_from_object(name+value)
                     #print(name + " : "+value)
                     add_literal(g, product_id, name, value)
 
     if 'openfda' in result:
         openfdas = result['openfda']  # list of dictionaries
         for name, values in openfdas.items():
-            openfda_id = "openfda_"+id_from_object(name)
+
             for value in values:
+                openfda_id = "openfda_"+id_from_object(name+value)
                 add_literal(g, openfda_id, name, value)
 
 print(g.serialize(format="ntriples"))
