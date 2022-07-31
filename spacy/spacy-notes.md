@@ -93,11 +93,13 @@ _2022-07-29_
 
 ### spaCy Setup
 
+```
 pip3 install -U pip setuptools wheel
 pip3 install -U 'spacy[transformers,lookups]'
 python3 -m spacy download en_core_web_sm
 
 pip3 install jupyterlab
 jupyter-lab
+```
 
 for now I think I'll code in VSCode, run in terminal - bit more obvious what's going on than in jupyter
