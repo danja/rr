@@ -15,6 +15,8 @@ the 'efficiency' model, '"en_core_web_sm" doesn't recognise 04/18/01 as a date
 
 trying 'accuracy', "en_core_web_trf"
 
+Yay! that does recognise 04/18/01 as a date
+
 ---
 
 _2022-07-29_
