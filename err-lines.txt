@@ -1,3 +1,0 @@
-<http://www.accessdata.fda.gov/xml/icsr-xml-v2.1.dtd/7e3fe5c9abca981ab3e42b073255da2e> <http://www.accessdata.fda.gov/xml/icsr-xml-v2.1.dtd#activesubstancename> "SULFAMETHOXAZOLE\TRIMETHOPRIM"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://www.accessdata.fda.gov/xml/icsr-xml-v2.1.dtd/b182d1bf7e672c3b16d81dc86db74295> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.accessdata.fda.gov/xml/icsr-xml-v2.1.dtd/#safetyreport> .
-<http://www.accessdata.fda.gov/xml/icsr-xml-v2.1.dtd/ade05da426d0b2284627ff5186648e29> <http://www.accessdata.fda.gov/xml/icsr-xml-v2.1.dtd#safetyreport> <http://www.accessdata.fda.gov/xml/icsr-xml-v2.1.dtd/b182d1bf7e672c3b16d81dc86db74295> .
