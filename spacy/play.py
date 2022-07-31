@@ -1,4 +1,4 @@
-# previously :
+# prepare with :
 #              python3 -m spacy download en_core_web_trf
 
 import spacy
