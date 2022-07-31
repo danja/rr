@@ -16,9 +16,10 @@ text = ''.join(lines)
 nlp = spacy.load("en_core_web_trf")
 doc = nlp(text)
 
-# for token in doc:
-#    if token.like_num:
-#        print('vvvvvvvvvvvvvvvvvvvvvvvvvvvv')
-#    print(token.text)
+# quick skim of the tokens
+for token in doc:
+    if token.like_num:  # there are a few other markers like this
+        print('vvvvvvvvvvvvvvvvvvvvvvvvvvvv')
+    print(token.text)
 
 displacy.serve(doc, style="ent")
